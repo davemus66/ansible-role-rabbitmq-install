@@ -9,7 +9,7 @@
   command: "{{ item }}" 
   with_items:
     - wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
-    - rpm -ifUvh epel-release-6*.rpm
+    - rpm -ifUvh --replacepkgs epel-release-6*.rpm
 
 - name: install rabbitmq-server dependencies (RedHat)
   yum: name="{{ item }}" state=present
