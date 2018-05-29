@@ -1,5 +1,5 @@
 ---
-- name: Setup/install tasks.
+- name: Setup tasks.
 
 - include: setup-RedHat.yml
   when: ansible_os_family == 'RedHat'
