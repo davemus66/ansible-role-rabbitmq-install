@@ -1,9 +1,8 @@
 ---
 
 - name: remove previous EPL verison
-  command: "{{ item }}"
   yum:
-    name: "{{ item }}"
+    name: epel-release-6*.rpm
     state: absent
 
 - name: install EPEL repository (RedHat)
