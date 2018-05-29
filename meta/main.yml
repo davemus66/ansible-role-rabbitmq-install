@@ -1,18 +1,15 @@
 ---
+galaxy_info:
+  author: daft lad
+  description: An ansible role for installing RabbitMQ.
+  company: daft co
+  license: GPLv3
+  min_ansible_version: 2.2
+  platforms:
+    - name: linux
+      versions:
+        - all
+  categories:
+    - networking
 dependencies: []
 
-  platforms:
-    - name: EL
-      versions:
-      - all
-    - name: Fedora
-      versions:
-      - all
-    - name: Debian
-      versions:
-      - all
-    - name: Ubuntu
-      versions:
-      - all
-  galaxy_tags:
-    - system
