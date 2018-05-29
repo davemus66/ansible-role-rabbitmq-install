@@ -1,5 +1,10 @@
 ---
 
+- name: remove previous EPL verison
+  yum:
+    name: "{{ item }}"
+    state: absent
+
 - name: install EPEL repository (RedHat)
   command: "{{ item }}" 
   with_items:
